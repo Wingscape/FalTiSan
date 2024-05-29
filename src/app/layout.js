@@ -1,9 +1,7 @@
-import { Arimo } from "next/font/google";
+import { arimoFont } from "./fonts.js";
 import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
-
-const arimoFont = Arimo({ subsets: ["latin"] });
 
 export const metadata = {
     title: "FalTiSan",
@@ -17,8 +15,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={arimoFont.className}>
-                <header className="bg-sky-500 px-[72px] py-6">
+            <body className={`${arimoFont.className} text-[16px]`}>
+                <header className="fixed top-0 right-0 left-0 bg-sky-500 px-[72px] py-6">
                     <nav className="grid grid-cols-3 gap-x-4">
                         <Link href="/">
                             <Image 
@@ -31,9 +29,10 @@ export default function RootLayout({ children }) {
                                     width: 'auto',
                                     height: '24px'
                                 }}
+                                unoptimized={true}
                             />
                         </Link>
-                        <ul className="flex flex-row px-10 text-base">
+                        <ul className="flex flex-row px-10">
                             <li className="flex-1 mr-10 text-right"><a href="">About</a></li>
                             <li className="flex-none"><a href="">Portfolio</a></li>
                             <li className="flex-1 ml-10 text-left"><a href="">Contact</a></li>
@@ -41,9 +40,9 @@ export default function RootLayout({ children }) {
                     </nav>
                 </header>
                 {children}
-                <footer className="bg-sky-200 px-[72px] py-16 grid grid-cols-2 gap-x-4">
+                <footer className="bg-sky-200 border-black border-t-4 px-[72px] pt-16 pb-[107px] grid grid-cols-2 gap-x-4">
                     <Image 
-                        src="/FalTiSan.svg"
+                        src="/FalTiSan_Ti.svg"
                         alt="Logo"
                         width={0}
                         height={0}
@@ -52,6 +51,7 @@ export default function RootLayout({ children }) {
                             width: 'auto',
                             height: '69px'
                         }}
+                        unoptimized={true}
                     />
                     <p className="text-right">&#169; 2024 FalTiSan. All Rights Reserved.</p>
                 </footer>
