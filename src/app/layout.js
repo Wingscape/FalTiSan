@@ -16,12 +16,12 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className={`${arimoFont.className} text-[16px]`}>
-                <header className="fixed top-0 right-0 left-0 bg-sky-500 px-[72px] py-6">
+                <header className="fixed z-10 top-0 right-0 left-0 bg-white px-[72px] py-6">
                     <nav className="grid grid-cols-3 gap-x-4">
                         <Link href="/">
                             <Image 
                                 src="/FalTiSan.svg"
-                                alt="Logo"
+                                alt="FalTiSan Logo"
                                 width={0}
                                 height={0}
                                 sizes="100vw"
@@ -40,10 +40,10 @@ export default function RootLayout({ children }) {
                     </nav>
                 </header>
                 {children}
-                <footer className="bg-sky-200 border-black border-t-4 px-[72px] pt-16 pb-[107px] grid grid-cols-2 gap-x-4">
+                <footer className="border-black border-t-4 px-[72px] pt-16 pb-[107px] grid grid-cols-2 gap-x-4">
                     <Image 
                         src="/FalTiSan_Ti.svg"
-                        alt="Logo"
+                        alt="FalTiSan with Ti letters Logo"
                         width={0}
                         height={0}
                         sizes="100vw"

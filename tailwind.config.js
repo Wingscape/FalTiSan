@@ -6,7 +6,13 @@ module.exports = {
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-        extend: {},
+        extend:{
+            colors: {
+                'faltisan-darkblue': '#3E3BCC',
+                'faltisan-mediumblue': '#3772FF',
+                'faltisan-lightblue': '#39A7FF'
+            }
+        } 
     },
     plugins: [],
 };
