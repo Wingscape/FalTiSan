@@ -1,10 +1,11 @@
 import { bitterFont } from "./fonts.js";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
     return (
         <main>
-            <header className="grid grid-cols-2 gap-x-10 px-[72px] pb-[102px] pt-[174px]">
+            <header className="grid grid-cols-2 gap-x-10 h-dvh min-h-[730px] px-[72px] pb-[102px] pt-[174px]">
                 <section>
                     <h1 className="group text-[56px] font-bold leading-tight">
                         Experienced ETL and Web Developer: <span className="group-hover:text-zinc-200 transition-color ease-in-out duration-300">Nau</span>Fal <span className="group-hover:text-zinc-200 transition-color ease-in-out duration-300">Fa</span><span className="text-faltisan-mediumblue">Ti</span><span className="group-hover:text-zinc-200 transition-color ease-in-out duration-300">hul Ih</span>San
@@ -32,7 +33,29 @@ export default function Home() {
                     <div className="absolute bg-faltisan-mediumblue top-[-56px] right-[438px] w-[56px] h-[520px]"></div>
                 </div>   
             </header>
-            <section></section>
+            <section className="grid grid-cols-2">
+                <Image 
+                    src="/About.svg"
+                    alt="Picture of me and my friends"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{
+                        height: 'auto',
+                        width: '100%'
+                    }}
+                    unoptimized={true}
+                />
+                <section className="grid content-center pr-[136px] pl-[64px] text-2xl">
+                    <div className="">
+                        <h2 className="pb-10 text-[48px] font-bold leading-tight">About</h2>
+                        <p>My journey in technology started with a fascination for artificial intelligence. Initially, I found myself on a different path when my recent role reintroduced me to the captivating world of web development.</p><br/>
+                        <p>Beyond just aesthetics, I discovered the art of crafting efficient backend architectures that power engaging digital experiences. Today, I stand as a seasoned web developer, blending creativity with technical expertise to bring visions to life.</p><br/>
+                        <p className="pb-9">Whether you're a collaborator seeking a partner or simply curious about my journey, I invite you to connect. I also specialize in creating seamless ETL (Extract Transform Load) processes to optimize data flow.</p>
+                        <Link href='/' className="font-bold hover:text-faltisan-lightblue">Let's explore the possibilities together!</Link>
+                    </div>
+                </section>
+            </section>
             <section></section>
             <section></section>
         </main>
