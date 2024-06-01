@@ -53,17 +53,17 @@ export default function Home() {
                         <p>My journey in technology started with a fascination for artificial intelligence. Initially, I found myself on a different path when my recent role reintroduced me to the captivating world of web development.</p><br/>
                         <p>Beyond just aesthetics, I discovered the art of crafting efficient backend architectures that power engaging digital experiences. Today, I stand as a seasoned web developer, blending creativity with technical expertise to bring visions to life.</p><br/>
                         <p className="pb-9">Whether you're a collaborator seeking a partner or simply curious about my journey, I invite you to connect. I also specialize in creating seamless ETL (Extract Transform Load) processes to optimize data flow.</p>
-                        <Link href='/' className="flex flex-row group">
+                        <Link href='/' className="flex flex-row group w-fit">
                             <p className="font-bold group-hover:text-faltisan-lightblue">Let's connect!</p>
                             <div className="p-px ml-4 transition-color ease-in-out duration-300 bg-faltisan-mediumblue group-hover:bg-faltisan-darkblue group-hover:border-faltisan-darkblue">
-                            <Image 
-                                src="/KeyboardArrowDownGoogleFont.svg"
-                                alt="Arrow down"
-                                width={30}
-                                height={30}
-                                sizes="100vw"
-                                unoptimized={true}
-                            />
+                                <Image 
+                                    src="/KeyboardArrowDownGoogleFont.svg"
+                                    alt="Arrow down"
+                                    width={30}
+                                    height={30}
+                                    sizes="100vw"
+                                    unoptimized={true}
+                                />
                             </div>
                         </Link>
                     </div>
@@ -90,13 +90,29 @@ export default function Home() {
                 <h2 className="text-[48px] pb-[40px] font-bold leading-tight">Contact</h2>
                 <p>Thank you for your interests. Let me know if I can help you with something!</p>
                 <div className="mt-[34px]">
-                    <Link href='/' className="font-bold hover:text-faltisan-lightblue">
-                        Naufal Fatihul Ihsan Dhiya Ul Lail
+                    <Link href='/' className="flex flex-row mb-[24px] w-fit">
+                        <Image 
+                            src="/LinkedinFontAwesome.svg"
+                            alt="Mail"
+                            width={32}
+                            height={32}
+                            sizes="100vw"
+                            unoptimized={true}
+                        />
+                        <p className="ml-2 font-bold hover:text-faltisan-lightblue">Naufal Fatihul Ihsan Dhiya Ul Lail</p>
                     </Link>
                 </div>
                 <div>
-                    <Link href='/' className="font-bold hover:text-faltisan-lightblue">
-                        wingscape17@gmail.com
+                    <Link href='/' className="flex flex-row w-fit">
+                        <Image 
+                            src="/MailGoogleFont.svg"
+                            alt="Mail"
+                            width={32}
+                            height={32}
+                            sizes="100vw"
+                            unoptimized={true}
+                        />
+                        <p className="ml-2 font-bold hover:text-faltisan-lightblue">wingscape17@gmail.com</p>
                     </Link>
                 </div>
             </section>
