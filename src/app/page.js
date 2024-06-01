@@ -33,7 +33,7 @@ export default function Home() {
                     <div className="absolute bg-faltisan-mediumblue top-[-56px] right-[438px] w-[56px] h-[520px]"></div>
                 </div>   
             </header>
-            <section className="grid grid-cols-2">
+            <section className="grid grid-cols-2 mb-10">
                 <Image 
                     src="/About.svg"
                     alt="Picture of me and my friends"
@@ -45,6 +45,7 @@ export default function Home() {
                         width: '100%'
                     }}
                     unoptimized={true}
+                    priority={true}
                 />
                 <section className="grid content-center pr-[136px] pl-[64px] text-2xl">
                     <div className="">
@@ -52,12 +53,53 @@ export default function Home() {
                         <p>My journey in technology started with a fascination for artificial intelligence. Initially, I found myself on a different path when my recent role reintroduced me to the captivating world of web development.</p><br/>
                         <p>Beyond just aesthetics, I discovered the art of crafting efficient backend architectures that power engaging digital experiences. Today, I stand as a seasoned web developer, blending creativity with technical expertise to bring visions to life.</p><br/>
                         <p className="pb-9">Whether you're a collaborator seeking a partner or simply curious about my journey, I invite you to connect. I also specialize in creating seamless ETL (Extract Transform Load) processes to optimize data flow.</p>
-                        <Link href='/' className="font-bold hover:text-faltisan-lightblue">Let's explore the possibilities together!</Link>
+                        <Link href='/' className="flex flex-row group">
+                            <p className="font-bold group-hover:text-faltisan-lightblue">Let's connect!</p>
+                            <div className="p-px ml-4 transition-color ease-in-out duration-300 bg-faltisan-mediumblue group-hover:bg-faltisan-darkblue group-hover:border-faltisan-darkblue">
+                            <Image 
+                                src="/KeyboardArrowDownGoogleFont.svg"
+                                alt="Arrow down"
+                                width={30}
+                                height={30}
+                                sizes="100vw"
+                                unoptimized={true}
+                            />
+                            </div>
+                        </Link>
                     </div>
                 </section>
             </section>
-            <section></section>
-            <section></section>
+            <section className="bg-[#EEEEEE] px-[72px] pt-[48px] pb-[40px]">
+                <h2 className="text-[48px] pb-[40px] font-bold leading-tight text-center">Portfolio</h2>
+                <div className="grid grid-cols-4 gap-x-8">
+                    <article className="bg-white p-6">
+                        <h4 className="text-faltisan-darkblue">Data analyst</h4>
+                        <h3 className="text-[32px] font-bold leading-tight mb-3">Cras id interdum lacus</h3>
+                        <p className={`${bitterFont.className} leading-tight mb-[23px]`}>Nulla eleifend imperdiet enim, at tincidunt urna fermentum sit amet. Aliquam sed eleifend nisi.</p>
+                        <button className="transition-color ease-in-out duration-300 border-2 border-faltisan-mediumblue text-faltisan-mediumblue hover:bg-faltisan-mediumblue hover:text-white py-[11px] px-[23px]">See more!</button>
+                    </article>
+                    <article className="bg-white p-6">
+                        <h4 className="text-faltisan-darkblue">Software engineering</h4>
+                        <h3 className="text-[32px] font-bold leading-tight mb-3">Sed et dapibus elit</h3>
+                        <p className={`${bitterFont.className} leading-tight mb-[23px]`}>Nulla eleifend imperdiet enim, at tincidunt urna fermentum sit amet. Aliquam sed eleifend nisi. </p>
+                        <button className="transition-color ease-in-out duration-300 border-2 border-faltisan-mediumblue text-faltisan-mediumblue hover:bg-faltisan-mediumblue hover:text-white py-[11px] px-[23px]">See more!</button>
+                    </article>
+                </div>
+            </section>
+            <section className="px-[72px] pt-[48px] pb-[58px] text-[24px]">
+                <h2 className="text-[48px] pb-[40px] font-bold leading-tight">Contact</h2>
+                <p>Thank you for your interests. Let me know if I can help you with something!</p>
+                <div className="mt-[34px]">
+                    <Link href='/' className="font-bold hover:text-faltisan-lightblue">
+                        Naufal Fatihul Ihsan Dhiya Ul Lail
+                    </Link>
+                </div>
+                <div>
+                    <Link href='/' className="font-bold hover:text-faltisan-lightblue">
+                        wingscape17@gmail.com
+                    </Link>
+                </div>
+            </section>
         </main>
     );
 }

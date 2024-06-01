@@ -8,7 +8,8 @@ export const metadata = {
     description: "An independent IT service provider",
     authors: [{name: 'Naufal Fatihul Ihsan', url: 'https://github.com/Wingscape'}],
     icons: {
-        icon: '/icon.ico'
+        icon: '/icon.ico',
+        apple: '/icon.ico'
     }
 };
 
@@ -33,9 +34,9 @@ export default function RootLayout({ children }) {
                             />
                         </Link>
                         <ul className="flex flex-row px-10">
-                            <li className="flex-1 mr-10 text-right"><a href="">About</a></li>
-                            <li className="flex-none"><a href="">Portfolio</a></li>
-                            <li className="flex-1 ml-10 text-left"><a href="">Contact</a></li>
+                            <li className="flex-1 mr-10 text-right hover:text-faltisan-lightblue"><a href="">About</a></li>
+                            <li className="flex-none hover:text-faltisan-lightblue"><a href="">Portfolio</a></li>
+                            <li className="flex-1 ml-10 text-left hover:text-faltisan-lightblue"><a href="">Contact</a></li>
                         </ul>
                     </nav>
                 </header>
