@@ -17,8 +17,8 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className={`${arimoFont.className} text-[16px]`}>
-                <header className="fixed z-10 top-0 right-0 left-0 bg-white px-[72px] py-6">
-                    <nav className="grid grid-cols-3 gap-x-4">
+                <header className="fixed z-10 top-0 right-0 left-0 bg-white px-[36px] min-[600px]:px-[72px] py-6">
+                    <nav className="grid grid-cols-1 min-[600px]:grid-cols-3 gap-x-4">
                         <Link href="/">
                             <Image 
                                 src="/FalTiSan.svg"
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
                                 unoptimized={true}
                             />
                         </Link>
-                        <ul className="flex flex-row px-10">
+                        <ul className="flex flex-row px-10 invisible min-[600px]:visible">
                             <li className="flex-1 mr-10 text-right hover:text-faltisan-lightblue"><a href="">About</a></li>
                             <li className="flex-none hover:text-faltisan-lightblue"><a href="">Portfolio</a></li>
                             <li className="flex-1 ml-10 text-left hover:text-faltisan-lightblue"><a href="">Contact</a></li>
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
                     </nav>
                 </header>
                 {children}
-                <footer className="border-black border-t-4 px-[72px] pt-16 pb-[107px] grid grid-cols-2 gap-x-4">
+                <footer className="border-black border-t-4 px-[36px] min-[600px]:px-[72px] pt-16 pb-[107px] grid grid-cols-2 gap-x-4">
                     <Image 
                         src="/FalTiSan_Ti.svg"
                         alt="FalTiSan with Ti letters Logo"
