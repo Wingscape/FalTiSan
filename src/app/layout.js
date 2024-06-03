@@ -34,9 +34,9 @@ export default function RootLayout({ children }) {
                             />
                         </Link>
                         <ul className="flex flex-row px-10 invisible min-[600px]:visible">
-                            <li className="flex-1 mr-10 text-right hover:text-faltisan-lightblue"><a href="">About</a></li>
-                            <li className="flex-none hover:text-faltisan-lightblue"><a href="">Portfolio</a></li>
-                            <li className="flex-1 ml-10 text-left hover:text-faltisan-lightblue"><a href="">Contact</a></li>
+                            <li className="flex-1 mr-10 text-right hover:text-faltisan-lightblue"><Link href="#about">About</Link></li>
+                            <li className="flex-none hover:text-faltisan-lightblue"><Link href="#portfolio">Portfolio</Link></li>
+                            <li className="flex-1 ml-10 text-left hover:text-faltisan-lightblue"><Link href="#contact">Contact</Link></li>
                         </ul>
                     </nav>
                 </header>
