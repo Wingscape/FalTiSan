@@ -19,5 +19,12 @@ export let projects = [
         "category": "Machine Learning",
         "description": "Recognize someone faces from the dataset given in real-time using Deep Learning algorithm with the techniques of face aligning, liveness detection, etc.",
         "url": "https://github.com/Wingscape/FaceRecognition-Python_DL"
+    },
+    {
+        "id": 4,
+        "title": "Worst Sales Performance by Sub-Category",
+        "category": "Data Analyst",
+        "description": "Visualize the data to see what is the top three of the worst sales performance for each USA region using pre attentive attributes theory and Tableau",
+        "url": "https://public.tableau.com/views/SuperstoresSalesPerformance_16975562105800/SalesPerformance?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link"
     }
 ];
