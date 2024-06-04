@@ -8,9 +8,16 @@ export let projects = [
     },
     {
         "id": 2,
+        "title": "FalTiSan Mockup Design",
+        "category": "UI UX Design",
+        "description": "This is the design for this website! With following UI UX Design System such as spatial system, spacing, color, fonts, etc. make the page looks pleasing to see.",
+        "url": "https://www.behance.net/gallery/191519293/Mockup-Design-for-My-Website"
+    },
+    {
+        "id": 3,
         "title": "Face Recognition with Deep Learning",
         "category": "Machine Learning",
-        "description": "Recognize the face from the dataset given in real-time using Deep Learning algorithm with the techniques of face aligning, liveness detection, etc.",
+        "description": "Recognize someone faces from the dataset given in real-time using Deep Learning algorithm with the techniques of face aligning, liveness detection, etc.",
         "url": "https://github.com/Wingscape/FaceRecognition-Python_DL"
     }
 ];

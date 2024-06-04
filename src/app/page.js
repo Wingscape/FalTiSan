@@ -93,7 +93,7 @@ export default function Home() {
                 <h2 className="text-[32px] min-[600px]:text-[40px] min-[1330px]:text-[48px] pb-[40px] font-bold leading-tight">Contact</h2>
                 <p>Thank you for your interests. Let me know if I can help you with something!</p>
                 <div className="mt-[34px]">
-                    <Link href='/' className="flex flex-row mb-[24px] w-fit">
+                    <a href='https://www.linkedin.com/in/naufal-fatihul-ihsan-dhiya-ul-lail-a1b5b21a4/' className="flex flex-row mb-[24px] w-fit">
                         <Image 
                             src="/LinkedinFontAwesome.svg"
                             alt="Linkedin"
@@ -105,10 +105,10 @@ export default function Home() {
                             }}
                         />
                         <p className="ml-2 font-bold hover:text-faltisan-lightblue">Naufal Fatihul Ihsan Dhiya Ul Lail</p>
-                    </Link>
+                    </a>
                 </div>
                 <div>
-                    <Link href='/' className="flex flex-row w-fit">
+                    <a href='mailto:naufal17042003@gmail.com' className="flex flex-row w-fit">
                         <Image 
                             src="/MailGoogleFont.svg"
                             alt="Mail"
@@ -120,7 +120,7 @@ export default function Home() {
                             }}
                         />
                         <p className="ml-2 font-bold hover:text-faltisan-lightblue">naufal17042003@gmail.com</p>
-                    </Link>
+                    </a>
                 </div>
             </section>
         </main>
