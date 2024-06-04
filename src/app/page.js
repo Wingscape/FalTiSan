@@ -1,6 +1,5 @@
 import { bitterFont } from "./fonts.js";
 import { projects } from "./utils/constants.js";
-import redirect from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
